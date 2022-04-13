@@ -13,6 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -41,6 +42,11 @@ public class ProductController {
     @GetMapping("/all")
     public ResponseEntity findAll(HttpServletRequest request) {
         return ResponseEntity.ok().body(productService.findAll());
+    }
+
+    @GetMapping("/all2")
+    public String hello(ModelMap modelMap) {
+        return "Hello World. How are you ?";
     }
 
     //lọc sản phẩm theo hãng và thể loại

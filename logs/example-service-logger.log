@@ -1,2 +1,1 @@
-2022-03-25 10:47:43,836 ERROR c.d.c.JwtAuthEntryPoint:19 [http-nio-8080-exec-1] Unauthorized error. Message: UserDetailsService returned null, which is an interface contract violation
-2022-03-25 10:48:03,137 ERROR c.d.c.JwtAuthEntryPoint:19 [http-nio-8080-exec-3] Unauthorized error. Message: UserDetailsService returned null, which is an interface contract violation
+2022-04-12 09:55:38,828 ERROR c.d.c.JwtAuthEntryPoint:19 [http-nio-8083-exec-3] Unauthorized error. Message: Full authentication is required to access this resource

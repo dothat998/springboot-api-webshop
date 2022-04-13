@@ -17,6 +17,17 @@ import java.util.Date;
 @Table
 @Getter
 @Setter
+/**
+ * CREATE TABLE user(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(200),
+    code INT,
+    phoneNumber VARCHAR(10),
+    email VARCHAR(200),
+ username VARCHAR(200),
+ password VARCHAR(200),
+ address VARCHAR(200));
+ */
     public class User extends BaseEntity implements UserDetails {
     @Column(nullable = false)
     private String name;
@@ -27,7 +38,7 @@ import java.util.Date;
     private String phoneNumber; // số điện thoại
     private String address; // địa chỉ
     @Column(nullable = false)
-    private String username;
+    private String username ;
     @Column(nullable = false)
     private String password;
     @Column(columnDefinition = "boolean default false")

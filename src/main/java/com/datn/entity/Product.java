@@ -13,6 +13,7 @@ import java.util.List;
 @Table
 @Getter
 @Setter
+
 public class Product extends BaseEntity{
     @Column(nullable = false)
     private String name;
